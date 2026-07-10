@@ -6,7 +6,7 @@ The workflow starts from PubTator3 BioC XML abstracts, disease annotations, and 
 
 `01Preprocess.ipynb` downloads/prepares PubTator3 data and extracts candidate virus-disease sentences.
 
-`02finetune_bert_save.py` fine-tunes PubMedBERT/BiomedBERT for virus-disease association classification.
+`02finetune_bert_save.py` fine-tunes PubMedBERT for virus-disease association classification.
 
 `03predict.py` applies the fine-tuned model to candidate sentences and outputs prediction probabilities.
 
