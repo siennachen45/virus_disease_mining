@@ -8,10 +8,10 @@ The workflow starts from PubTator3 BioC XML abstracts, disease annotations, and 
 
 `02finetune_bert_save.py` fine-tunes PubMedBERT for virus-disease association classification.
 
+`finetune_data.txt` is training data for `02finetune_bert_save.py`, with `Sentence` and binary `Label` columns.
+
 `03predict.py` applies the fine-tuned model to candidate sentences and outputs prediction probabilities.
 
 `04filter_result.ipynb` filters abstract predictions by `virus_taxid` and `mesh_id` and prepares grouped evidence for review.
 
 `05filter_result_onFULL.ipynb` applies the same `virus_taxid` / `mesh_id` filtering logic to full-text predictions.
-
-`06ai_predict_Round2.py` uses an external LLM to re-check grouped virus-disease evidence pairs.
